@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{asset('css/index.css')}}">
     <link rel="stylesheet" href="{{asset('checkout/style.css')}}">
+    <link rel="stylesheet" href="{{asset('shop-page/style.css')}}">
+    <link rel="stylesheet" href="{{asset('product-detail/style.css')}}">
+    <link rel="stylesheet" href="{{asset('shopping-cart/style.css')}}">
     <title>Home Page</title>
 </head>
 
@@ -27,27 +30,27 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="./Shop Page/index.html">Fashion</a>
+                            <a class="nav-link" href="{{url('/shop')}}">Fashion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./Shop Page/index.html">Deal</a>
+                            <a class="nav-link" href="{{url('/shop')}}">Deal</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="./Empty Click Page/index.html">New Arrivals</a>
+                            <a class="nav-link" href="{{url('/error')}}">New Arrivals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./Empty Click Page/index.html">Packages</a>
+                            <a class="nav-link" href="{{url('/error')}}">Packages</a>
                         </li>
                     </ul>
                     <form class="d-flex align-items-center" role="button">
                         <!-- /* From Uiverse.io sign in */ -->
                         <div tabindex="0" class="signInButton">
-                            <a href="./Sign In page/index.html" class="signInButtonText text-decoration-none">Sign
+                            <a href="{{url('/sign-in')}}" class="signInButtonText text-decoration-none">Sign
                                 In</a>
                         </div>
                         <!-- /* From Uiverse.io sign up */  -->
-                        <a class="btn-1" href="./sign up page/index.html">
+                        <a class="btn-1" href="{{url('/sign-up')}}">
                             <div class="original">Signup</div>
                             <div class="letters">
                                 <span>S</span>

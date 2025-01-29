@@ -20,7 +20,7 @@
                         <div class="contactSec">
                             <div class="d-flex align-items-center">
                                 <h2 class="me-4">Contact</h2>
-                                <p class="ms-auto ms-3">Have an Account? <span><a href="#"> Create Account</a></span>
+                                <p class="ms-auto ms-3">Have an Account? <span><a href="{{url('/sign-up')}}"> Create Account</a></span>
                                 </p>
                             </div>
                             <input class="form-control border-dark rounded-0" type="email" placeholder="Email Address">
@@ -139,7 +139,7 @@
                                 Scelerisque
                                 duis ultrices sollicitudin aliquam sem.</p>
                             <p class="card-text"><small class="text-body-secondary">michael@ymail.com</small></p>
-                            <a href="#" class="btn btn-dark px-3">Subscribe Now</a>
+                            <a href="{{url('/sign-in')}}" class="btn btn-dark px-3">Subscribe Now</a>
                         </div>
                     </div>
                 </div>

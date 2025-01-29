@@ -1,5 +1,7 @@
 @extends('layouts.master')
 @section('mycontent')
+
+
 <div class="container my-3">
     <div class="row g-5 justify-content-center">
         <div class="col-md-4">
@@ -19,7 +21,7 @@
                     <div class="sale-text">SALE</div>
                 </div>
                 <p>NEW COLLECTIONS</p>
-                <a class="btn btn-dark" href="./Shop Page/index.html">SHOP NOW</a>
+                <a class="btn btn-dark" href="{{url('/shop')}}">SHOP NOW</a>
                 <div class="col-12 mt-3">
                     <img src="./images/Bottom_grp_img.png" alt="Bottom_grp_img" width="100%">
                 </div>
@@ -340,7 +342,7 @@
         </div>
 
         <div class="mt-5 bg">
-            <button class="btn btn-dark">View more</button>
+            <a href="{{url('/shop')}}" class="btn btn-dark">View more</a>
         </div>
     </div>
 </div>
@@ -492,7 +494,7 @@
                         Scelerisque
                         duis ultrices sollicitudin aliquam sem.</p>
                     <p class="card-text"><small class="text-body-secondary">michael@ymail.com</small></p>
-                    <a href="#" class="btn btn-dark px-3">Subscribe Now</a>
+                    <a href="{{url('/sign-in')}}" class="btn btn-dark px-3">Subscribe Now</a>
                 </div>
             </div>
         </div>
